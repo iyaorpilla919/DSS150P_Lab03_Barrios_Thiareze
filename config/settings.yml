@@ -1,0 +1,13 @@
+paths:
+  source_dir: data/source
+  raw_dir: data/raw
+  staging_dir: data/staging
+  curated_dir: data/curated
+  quarantine_dir: data/quarantine
+  benchmark_dir: data/benchmarks
+  partitioned_dir: data/partitioned
+
+rules:
+  quantity_min: 1
+  quantity_max: 20
+  allowed_status: ["PENDING", "PROCESSING", "SHIPPED", "DELIVERED", "CANCELLED"]
