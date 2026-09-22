@@ -43,6 +43,8 @@ def load_curated(run_id: str) -> int:
 def load_partition(year: int, month: int, run_id: str) -> int:
     part_path = Path(SETTINGS["paths"]["partitioned_dir"]) / f"order_year={year}" / f"order_month={month}"
     df = pd.read_parquet(part_path)
+    df["order_year"] = year
+    df["order_month"] = month
     engine = _engine()
     with engine.begin() as conn:
         for _, row in df.iterrows():
