@@ -1,2 +1,0 @@
-product_id,name,brand,unit_price,active,updated_at,category.name,category.department,category_name,category_department,reason
-P0078,Nova Networking 078,Nova,-199.0,True,2025-07-29 00:00:00+00:00,Networking,Computing,Networking,Computing,invalid_or_negative_price
