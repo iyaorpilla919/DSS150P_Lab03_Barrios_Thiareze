@@ -1,0 +1,4 @@
+FROM apache/airflow:2.9.3-python3.11
+COPY requirements.txt /tmp/requirements.txt
+RUN grep -v -iE "^(SQLAlchemy|pandas)==" /tmp/requirements.txt > /tmp/requirements-airflow.txt && \
+    pip install --no-cache-dir -r /tmp/requirements-airflow.txt
