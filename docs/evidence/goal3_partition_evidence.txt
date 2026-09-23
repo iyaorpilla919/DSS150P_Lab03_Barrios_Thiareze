@@ -1,0 +1,45 @@
+﻿=== Goal 3 Partition Evidence ===
+Generated: 2026-09-23 09:45:17 +08:00
+
+--- Partition directory tree (data/partitioned) ---
+C:\Users\Iya-Lenovo\DSS150P_Lab03_Barrios_Thiareze\data\partitioned\order_year=2025
+C:\Users\Iya-Lenovo\DSS150P_Lab03_Barrios_Thiareze\data\partitioned\order_year=2026
+C:\Users\Iya-Lenovo\DSS150P_Lab03_Barrios_Thiareze\data\partitioned\order_year=2025\order_month=1
+C:\Users\Iya-Lenovo\DSS150P_Lab03_Barrios_Thiareze\data\partitioned\order_year=2025\order_month=10
+C:\Users\Iya-Lenovo\DSS150P_Lab03_Barrios_Thiareze\data\partitioned\order_year=2025\order_month=11
+C:\Users\Iya-Lenovo\DSS150P_Lab03_Barrios_Thiareze\data\partitioned\order_year=2025\order_month=12
+C:\Users\Iya-Lenovo\DSS150P_Lab03_Barrios_Thiareze\data\partitioned\order_year=2025\order_month=2
+C:\Users\Iya-Lenovo\DSS150P_Lab03_Barrios_Thiareze\data\partitioned\order_year=2025\order_month=3
+C:\Users\Iya-Lenovo\DSS150P_Lab03_Barrios_Thiareze\data\partitioned\order_year=2025\order_month=4
+C:\Users\Iya-Lenovo\DSS150P_Lab03_Barrios_Thiareze\data\partitioned\order_year=2025\order_month=5
+C:\Users\Iya-Lenovo\DSS150P_Lab03_Barrios_Thiareze\data\partitioned\order_year=2025\order_month=6
+C:\Users\Iya-Lenovo\DSS150P_Lab03_Barrios_Thiareze\data\partitioned\order_year=2025\order_month=7
+C:\Users\Iya-Lenovo\DSS150P_Lab03_Barrios_Thiareze\data\partitioned\order_year=2025\order_month=8
+C:\Users\Iya-Lenovo\DSS150P_Lab03_Barrios_Thiareze\data\partitioned\order_year=2025\order_month=9
+C:\Users\Iya-Lenovo\DSS150P_Lab03_Barrios_Thiareze\data\partitioned\order_year=2026\order_month=1
+C:\Users\Iya-Lenovo\DSS150P_Lab03_Barrios_Thiareze\data\partitioned\order_year=2026\order_month=2
+C:\Users\Iya-Lenovo\DSS150P_Lab03_Barrios_Thiareze\data\partitioned\order_year=2026\order_month=3
+C:\Users\Iya-Lenovo\DSS150P_Lab03_Barrios_Thiareze\data\partitioned\order_year=2026\order_month=4
+C:\Users\Iya-Lenovo\DSS150P_Lab03_Barrios_Thiareze\data\partitioned\order_year=2026\order_month=5
+C:\Users\Iya-Lenovo\DSS150P_Lab03_Barrios_Thiareze\data\partitioned\order_year=2026\order_month=6
+C:\Users\Iya-Lenovo\DSS150P_Lab03_Barrios_Thiareze\data\partitioned\order_year=2026\order_month=7
+C:\Users\Iya-Lenovo\DSS150P_Lab03_Barrios_Thiareze\data\partitioned\order_year=2026\order_month=8
+C:\Users\Iya-Lenovo\DSS150P_Lab03_Barrios_Thiareze\data\partitioned\order_year=2026\order_month=9
+
+--- Files in sample partition (2026-01) ---
+
+Name                                       Length
+----                                       ------
+14e3389c3ced42808163f430450e90ce-0.parquet 235328
+
+
+
+
+--- audit.partition_loads (all rows) ---
+ id | order_year | order_month |          pipeline_run_id          |         loaded_at_utc         | row_count 
+----+------------+-------------+-----------------------------------+-------------------------------+-----------
+  1 |       2026 |           1 | bf1b3162bcdf                      | 2026-09-22 23:36:34.768762+00 |      1684
+  2 |       2026 |           1 | bf1b3162bcdf                      | 2026-09-22 23:37:02.429815+00 |      1684
+  3 |       2026 |           1 | manual__2026-09-23T00:33:55+00:00 | 2026-09-23 00:35:43.897192+00 |      1684
+(3 rows)
+

@@ -1,0 +1,33 @@
+﻿=== Goal 1 Environment Evidence ===
+Generated: 2026-09-23 09:44:35 +08:00
+
+--- git log (decorated, last 15 commits) ---
+c42b265 (HEAD -> main, origin/main, origin/goal4-airflow-orchestration, goal4-airflow-orchestration) fix: add .dockerignore to keep secrets and venv out of pipeline image
+9e6f9ea docs: add Goal 3 interpretation and technical question answers
+6655731 docs: complete README with Goal 1-4 summaries and technical reflection
+519f3f0 feat: add Airflow DAG with schedule, retries, params, failure handling
+a8baed9 (origin/goal1-reproducible-environment, goal1-reproducible-environment) chore: stop tracking regenerable benchmark and partition output
+321fe8d feat: add benchmarking and partitioned parquet with selective load
+23731d5 chore: stop tracking regenerable pipeline output folders
+ae05ac1 feat: implement raw/staging/curated/quarantine ETL and rerun-safe load
+848128e feat: add reproducible pipeline environment
+d4573ed chore: initialize repo skeleton and gitignore
+
+--- docker images (dss150p-*) ---
+
+dss150p_lab03_barrios_thiareze-pipeline:latest  654MB
+dss150p_lab03_barrios_thiareze-airflow-webserver:latest  2.01GB
+dss150p_lab03_barrios_thiareze-airflow-init:latest  2.01GB
+dss150p_lab03_barrios_thiareze-airflow-scheduler:latest  2.01GB
+
+--- docker compose ps ---
+NAME               IMAGE         COMMAND                  SERVICE    CREATED              STATUS                        PORTS
+dss150p-postgres   postgres:16   "docker-entrypoint.sΓÇª"   postgres   About a minute ago   Up About a minute (healthy)   0.0.0.0:5432->5432/tcp, [::]:5432->5432/tcp
+
+
+--- validate-env inside container ---
+[validate-env] Python 3.11.16 - core imports OK
+[validate-env] settings loaded: ['source_dir', 'raw_dir', 'staging_dir', 'curated_dir', 'quarantine_dir', 'benchmark_dir', 'partitioned_dir']
+
+
+
